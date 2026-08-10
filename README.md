@@ -26,7 +26,7 @@ Enter your travel request — get flight suggestions, hotel ideas, and a day-by-
 | **Conversation Memory** | State persistence across requests using PostgreSQL |
 | **Lightning Fast LLMs** | Powered by Groq for near-instant response generation |
 | **PDF Export** | Download your travel plan as a beautifully formatted PDF |
-| **Modern UI** | Sleek, dark-themed HTML/CSS/JS frontend with micro-animations |
+
 
 ---
 
