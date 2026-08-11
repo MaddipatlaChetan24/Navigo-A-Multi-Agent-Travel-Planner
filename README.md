@@ -128,32 +128,6 @@ navigo/
 
 ---
 
-## Usage
-
-1. Open `http://127.0.0.1:8000/` in your browser.
-2. Type a travel request (e.g., *"Plan a 7-day trip to Tokyo from DAC under $1500"*).
-3. Click **Generate Plan**.
-4. The LangGraph agents will collaborate in the background to fetch flights, hotels, and build an itinerary.
-5. Review your personalized travel plan and click **Download PDF** to save it.
-
----
-
-## Environment Variables
-
-| Variable | Required | Description |
-|---|---|---|
-| `DATABASE_URL` | Yes | PostgreSQL connection string for saving conversation threads |
-| `GROQ_API_KEY` | Yes | Groq API key for LLM inference |
-| `TAVILY_API_KEY` | Yes | Tavily API key for hotel and location research |
-| `AVIATIONSTACK_API_KEY`| Yes | AviationStack API key for live flight data |
-| `DEFAULT_ORIGIN_IATA` | No | Default airport IATA code (e.g., DAC, JFK, LHR) |
-
----
-
-## Docker Deployment
-
-The project includes a `Dockerfile` for containerized deployment.
-
 ```bash
 # Build the image
 docker build -t navigo-app .
