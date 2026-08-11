@@ -2,31 +2,7 @@
 
 # Navigo AI
 
-**Transform a natural-language trip request into a complete, practical travel plan.**
-
-Enter your travel request — get flight suggestions, hotel ideas, and a day-by-day itinerary using a multi-agent AI workflow.
-
-[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white)](https://python.org)
-[![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
-[![LangChain](https://img.shields.io/badge/LangGraph-1C3C3C?logo=langchain&logoColor=white)](https://langchain.com)
-[![Groq](https://img.shields.io/badge/Groq-LLM-F55036?logo=groq&logoColor=white)](https://groq.com)
-
-</div>
-
----
-
-## Features
-
-| Feature | Description |
-|---|---|
-| **Flight Research** | Live flight data and suggestions via AviationStack |
-| **Hotel Discovery** | Real-time accommodation searches via Tavily |
-| **Multi-Agent Orchestration** | Complex task routing using LangGraph and LangChain |
-| **Structured Itineraries** | Practical, day-by-day travel plans customized to your prompt |
-| **Conversation Memory** | State persistence across requests using PostgreSQL |
-| **Lightning Fast LLMs** | Powered by Groq for near-instant response generation |
-| **PDF Export** | Download your travel plan as a beautifully formatted PDF |
-
+**Transform a natural-lan
 
 ---
 
