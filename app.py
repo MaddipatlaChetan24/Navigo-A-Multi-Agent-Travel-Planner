@@ -82,7 +82,28 @@ async def travel_planner(request_data: TravelRequest):
         print("ERROR:", e)
         traceback.print_exc()
 
-        return JSON
+        return JSONResponse(
+            status_code=500,
+            content={
+                "success": False,
+                "error": str(e)
+            }
+        )
+
+
+
+@app.get("/health")
+async def health_check():
+    return {
+        "status": "ok",
+        "message": "AI Travel Planner API is running"
+    }
+
+
+@app.get("/favicon.ico")
+async def favicon():
+    return JSONResponse(content={})
+
 
 
 if __name__ == "__main__":
