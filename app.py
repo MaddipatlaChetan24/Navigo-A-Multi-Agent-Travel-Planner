@@ -19,19 +19,6 @@ BASE_DIR = Path(__file__).resolve().parent
 
 
 
-@app.post("/api/travel")
-async def travel_planner(request_data: TravelRequest):
-    try:
-        user_message = request_data.message.strip()
-
-        if not user_message:
-            return JSONResponse(
-                status_code=400,
-                content={
-                    "success": False,
-                    "error": "Message cannot be empty."
-                }
-            )
 
         result = run_travel_agent(
             user_input=user_message,
