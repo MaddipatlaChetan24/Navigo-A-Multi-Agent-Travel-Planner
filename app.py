@@ -20,26 +20,6 @@ BASE_DIR = Path(__file__).resolve().parent
 
 
 
-    except Exception as e:
-        print("ERROR:", e)
-        traceback.print_exc()
-
-        return JSONResponse(
-            status_code=500,
-            content={
-                "success": False,
-                "error": str(e)
-            }
-        )
-
-
-
-@app.get("/health")
-async def health_check():
-    return {
-        "status": "ok",
-        "message": "AI Travel Planner API is running"
-    }
 
 
 @app.get("/favicon.ico")
