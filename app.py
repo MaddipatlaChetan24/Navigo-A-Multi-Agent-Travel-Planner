@@ -12,19 +12,7 @@ from backend import run_travel_agent
 
 BASE_DIR = Path(__file__).resolve().parent
 
-app = FastAPI(
-    title="Navigo",
-    description="LangGraph Multi-Agent Travel Planner with FastAPI Frontend",
-    version="1.0.0"
-)
 
-
-
-
-
-templates = Jinja2Templates(
-    directory=str(BASE_DIR / "templates")
-)
 
 
 
