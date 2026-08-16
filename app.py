@@ -19,16 +19,6 @@ BASE_DIR = Path(__file__).resolve().parent
 
 
 
-
-@app.get("/", response_class=HTMLResponse)
-async def home(request: Request):
-    return templates.TemplateResponse(
-        request=request,
-        name="index.html",
-        context={}
-    )
-
-
 @app.post("/api/travel")
 async def travel_planner(request_data: TravelRequest):
     try:
