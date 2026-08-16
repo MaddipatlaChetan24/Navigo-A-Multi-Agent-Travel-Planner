@@ -16,9 +16,7 @@ BASE_DIR = Path(__file__).resolve().parent
 
 
 
-class TravelRequest(BaseModel):
-    message: str
-    thread_id: str | None = None
+
 
 
 
