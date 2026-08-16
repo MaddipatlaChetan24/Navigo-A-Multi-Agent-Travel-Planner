@@ -20,23 +20,6 @@ BASE_DIR = Path(__file__).resolve().parent
 
 
 
-        result = run_travel_agent(
-            user_input=user_message,
-            thread_id=request_data.thread_id
-        )
-
-        return JSONResponse(
-            content={
-                "success": True,
-                "thread_id": result["thread_id"],
-                "answer": result["answer"],
-                "flight_results": result["flight_results"],
-                "hotel_results": result["hotel_results"],
-                "itinerary": result["itinerary"],
-                "llm_calls": result["llm_calls"],
-            }
-        )
-
     except Exception as e:
         print("ERROR:", e)
         traceback.print_exc()
