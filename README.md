@@ -14,27 +14,7 @@ Enter your travel request — get flight suggestions, hotel ideas, and a day-by-
 
 
 
-## Architecture
 
-```mermaid
-flowchart LR
-    A["User Prompt"] --> B["FastAPI Backend"]
-    B --> C{"LangGraph\nWorkflow"}
-    
-    C --> D["Flight Agent\n(AviationStack)"]
-    C --> E["Hotel Agent\n(Tavily Search)"]
-    C --> F["Itinerary Agent\n(Groq LLM)"]
-    
-    D --> G["Final\nResponse Agent"]
-    E --> G
-    F --> G
-    
-    G --> H["Polished\nTravel Plan"]
-    H --> B
-    B --> I["Web UI / PDF"]
-```
-
----
 
 ## Tech Stack
 
