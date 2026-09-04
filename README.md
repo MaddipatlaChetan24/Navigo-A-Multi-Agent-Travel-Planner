@@ -12,20 +12,7 @@ Enter your travel request — get flight suggestions, hotel ideas, and a day-by-
 
 ---
 
-## Features
 
-| Feature | Description |
-|---|---|
-| **Flight Research** | Live flight data and suggestions via AviationStack |
-| **Hotel Discovery** | Real-time accommodation searches via Tavily |
-| **Multi-Agent Orchestration** | Complex task routing using LangGraph and LangChain |
-| **Structured Itineraries** | Practical, day-by-day travel plans customized to your prompt |
-| **Conversation Memory** | State persistence across requests using PostgreSQL |
-| **Lightning Fast LLMs** | Powered by Groq for near-instant response generation |
-| **PDF Export** | Download your travel plan as a beautifully formatted PDF |
-
-
----
 
 ## Architecture
 
