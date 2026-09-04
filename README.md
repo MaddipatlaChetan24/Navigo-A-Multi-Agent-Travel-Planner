@@ -4,49 +4,7 @@
 
 **Transform a natural-language trip request into a complete, practical travel plan.**
 
-Enter your travel request — get flight suggestions, hotel ideas, and a day-by-day itinerary using a multi-agent AI workflow.
 
-
-
-</div>
-
----
-
-
-
-
-
-## Tech Stack
-
-- **Framework**: [FastAPI](https://fastapi.tiangolo.com/)
-- **Frontend**: HTML5, CSS3, Vanilla JS, Jinja2 Templates
-- **AI Orchestration**: [LangGraph](https://python.langchain.com/docs/langgraph) & [LangChain](https://langchain.com)
-- **LLM Provider**: [Groq](https://groq.com/)
-- **Database**: PostgreSQL (for LangGraph state checkpointer)
-- **Search API**: [Tavily](https://tavily.com/)
-- **Flight API**: [AviationStack](https://aviationstack.com/)
-
----
-
-## Quick Start
-
-### Prerequisites
-
-- Python ≥ 3.10
-- PostgreSQL running locally or accessible remotely
-- API Keys for Groq, Tavily, and AviationStack
-
-### Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/YOUR_USERNAME/navigo.git
-cd navigo
-
-# Create virtual environment
-python -m venv .venv
-source .venv/bin/activate   # macOS/Linux
-# .venv\Scripts\activate    # Windows
 
 # Install dependencies
 pip install -r requirements.txt
