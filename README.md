@@ -4,7 +4,85 @@
 
 **Transform a natural-language trip request into a complete, practical travel plan.**
 
+Enter your travel request — get flight suggestions, hotel ideas, and a day-by-day itinerary using a multi-agent AI workflow.
 
+[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white)](https://python.org)
+[![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![LangChain](https://img.shields.io/badge/LangGraph-1C3C3C?logo=langchain&logoColor=white)](https://langchain.com)
+[![Groq](https://img.shields.io/badge/Groq-LLM-F55036?logo=groq&logoColor=white)](https://groq.com)
+
+</div>
+
+---
+
+## Features
+
+| Feature | Description |
+|---|---|
+| **Flight Research** | Live flight data and suggestions via AviationStack |
+| **Hotel Discovery** | Real-time accommodation searches via Tavily |
+| **Multi-Agent Orchestration** | Complex task routing using LangGraph and LangChain |
+| **Structured Itineraries** | Practical, day-by-day travel plans customized to your prompt |
+| **Conversation Memory** | State persistence across requests using PostgreSQL |
+| **Lightning Fast LLMs** | Powered by Groq for near-instant response generation |
+| **PDF Export** | Download your travel plan as a beautifully formatted PDF |
+
+
+---
+
+## Architecture
+
+```mermaid
+flowchart LR
+    A["User Prompt"] --> B["FastAPI Backend"]
+    B --> C{"LangGraph\nWorkflow"}
+    
+    C --> D["Flight Agent\n(AviationStack)"]
+    C --> E["Hotel Agent\n(Tavily Search)"]
+    C --> F["Itinerary Agent\n(Groq LLM)"]
+    
+    D --> G["Final\nResponse Agent"]
+    E --> G
+    F --> G
+    
+    G --> H["Polished\nTravel Plan"]
+    H --> B
+    B --> I["Web UI / PDF"]
+```
+
+---
+
+## Tech Stack
+
+- **Framework**: [FastAPI](https://fastapi.tiangolo.com/)
+- **Frontend**: HTML5, CSS3, Vanilla JS, Jinja2 Templates
+- **AI Orchestration**: [LangGraph](https://python.langchain.com/docs/langgraph) & [LangChain](https://langchain.com)
+- **LLM Provider**: [Groq](https://groq.com/)
+- **Database**: PostgreSQL (for LangGraph state checkpointer)
+- **Search API**: [Tavily](https://tavily.com/)
+- **Flight API**: [AviationStack](https://aviationstack.com/)
+
+---
+
+## Quick Start
+
+### Prerequisites
+
+- Python ≥ 3.10
+- PostgreSQL running locally or accessible remotely
+- API Keys for Groq, Tavily, and AviationStack
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/YOUR_USERNAME/navigo.git
+cd navigo
+
+# Create virtual environment
+python -m venv .venv
+source .venv/bin/activate   # macOS/Linux
+# .venv\Scripts\activate    # Windows
 
 # Install dependencies
 pip install -r requirements.txt
