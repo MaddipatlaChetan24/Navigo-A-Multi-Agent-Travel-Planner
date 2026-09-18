@@ -20,13 +20,6 @@ templates = Jinja2Templates(
 )
 
 
-
-class TravelRequest(BaseModel):
-    message: str
-    thread_id: str | None = None
-
-
-
 @app.get("/", response_class=HTMLResponse)
 async def home(request: Request):
     return templates.TemplateResponse(
