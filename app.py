@@ -6,22 +6,6 @@ from fastapi import FastAPI, Request
 from fastapi.responses import HTMLResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
-from pydantic import BaseModel
-
-app.mount(
-    "/static",
-    StaticFiles(directory=str(BASE_DIR / "static")),
-    name="static"
-)
-
-
-templates = Jinja2Templates(
-    directory=str(BASE_DIR / "templateavelRequest):
-    try:
-        user_message = request_data.message.strip()
-
-        if not user_message:
-            return JSONResponse(
                 status_code=400,
                 content={
                     "success": False,
