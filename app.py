@@ -14,16 +14,7 @@ from fastapi.templating import Jinja2Templates
             )
                 "answer": result["answer"],
 
-        return JSONResponse(
-            status_code=500,
-            content={
-async def health_check():
-    return {
-        "status": "ok",
-        "message": "AI Travel Planner API is running"
-    }
-
-
+        return JSONRespo
 @app.get("/favicon.ico")
 async def favicon():
     return JSONResponse(content={})
