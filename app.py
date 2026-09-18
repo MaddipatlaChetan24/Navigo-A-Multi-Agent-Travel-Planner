@@ -16,21 +16,7 @@ app.mount(
 
 
 templates = Jinja2Templates(
-    directory=str(BASE_DIR / "templates")
-)
-
-
-@app.get("/", response_class=HTMLResponse)
-async def home(request: Request):
-    return templates.TemplateResponse(
-        request=request,
-        name="index.html",
-        context={}
-    )
-
-
-@app.post("/api/travel")
-async def travel_planner(request_data: TravelRequest):
+    directory=str(BASE_DIR / "templateavelRequest):
     try:
         user_message = request_data.message.strip()
 
