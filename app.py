@@ -17,14 +17,6 @@ from fastapi.templating import Jinja2Templates
         return JSONResponse(
             status_code=500,
             content={
-                "success": False,
-                "error": str(e)
-            }
-        )
-
-
-
-@app.get("/health")
 async def health_check():
     return {
         "status": "ok",
