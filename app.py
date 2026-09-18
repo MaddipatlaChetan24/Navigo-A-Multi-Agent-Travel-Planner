@@ -17,14 +17,5 @@ from fastapi.templating import Jinja2Templates
         return JSONRespo
 @app.get("/favicon.ico")
 async def favicon():
-    return JSONResponse(content={})
-
-
-
-if __name__ == "__main__":
-    uvicorn.run(
-        "app:app",
-        host="127.0.0.1",
-        port=8000,
         reload=True
     )
