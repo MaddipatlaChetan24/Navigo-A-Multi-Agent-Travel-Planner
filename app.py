@@ -12,16 +12,6 @@ from fastapi.templating import Jinja2Templates
                     "error": "Message cannot be empty."
                 }
             )
-
-        result = run_travel_agent(
-            user_input=user_message,
-            thread_id=request_data.thread_id
-        )
-
-        return JSONResponse(
-            content={
-                "success": True,
-                "thread_id": result["thread_id"],
                 "answer": result["answer"],
                 "flight_results": result["flight_results"],
                 "hotel_results": 
