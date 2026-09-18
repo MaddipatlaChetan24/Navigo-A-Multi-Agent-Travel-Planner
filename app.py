@@ -13,14 +13,6 @@ from fastapi.templating import Jinja2Templates
                 }
             )
                 "answer": result["answer"],
-                "flight_results": result["flight_results"],
-                "hotel_results": 
-            }
-        )
-
-    except Exception as e:
-        print("ERROR:", e)
-        traceback.print_exc()
 
         return JSONResponse(
             status_code=500,
