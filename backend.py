@@ -8,11 +8,6 @@ os.environ["SSL_CERT_FILE"] = certifi.where()
 os.environ["REQUESTS_CA_BUNDLE"] = certifi.where()
 
 
-
-
-# Hotel Agent
-# =========================
-
 def hotel_agent(state: TravelState):
     query = f"Best hotels for {state['user_query']}"
     hotel_results = tavily_search(query)
