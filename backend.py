@@ -27,12 +27,6 @@ from langgraph.graph import StateGraph, START, END
 
 # =========================
 
-llm = ChatGroq(
-    model="llama-3.3-70b-versatile",
-    api_key=GROQ_API_KEY
-)
-
-
 # =========================
 # State
 # =========================
