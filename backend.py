@@ -20,11 +20,6 @@ from psycopg.rows import dict_row
 # =========================
 
     user_query: str
-    flight_results: str
-
-# =========================
-# Flight Agent
-# =========================
 
 def flight_agent(state: TravelState):
     query = state["user_query"]
