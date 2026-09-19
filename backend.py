@@ -16,8 +16,6 @@ os.environ["REQUESTS_CA_BUNDLE"] = certifi.where()
 
 def flight_agent(state: TravelState):
     query = state["user_query"]
-            AIMessage(content="Flight results fetched.")
-        ],
         "llm_calls": state.get("llm_calls", 0) + 1
     }
 
