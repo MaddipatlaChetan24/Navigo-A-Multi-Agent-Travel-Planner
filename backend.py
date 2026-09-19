@@ -12,15 +12,6 @@ def hotel_agent(state: TravelState):
 
     return {
         "hotel_results": hotel_results,
-        "messages": [
-# =========================
-
-def itinerary_agent(state: TravelState):
-    prompt = f"""
-Create a complete travel itinerary.
-
-User Query:
-{state['user_query']}
 
 Flight Results:
 {state['flight_results']}
