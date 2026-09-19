@@ -22,9 +22,6 @@ from langgraph.graph import StateGraph, START, END
     if "sslmode=" not in database_url:
         separator = "&" if "?" in database_url else "?"
 
-    raise ValueError("GROQ_API_KEY is missing. Please add it to your .env file.")
-
-
 # =========================
 
 # =========================
