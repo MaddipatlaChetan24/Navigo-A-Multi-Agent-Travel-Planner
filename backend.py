@@ -18,7 +18,6 @@ from langgraph.graph import StateGraph, START, END
 from langgraph.checkpoint.postgres import PostgresSaver
 from langchain_core.messages import (
     AnyMessage,
-    HumanMessage,
     AIMessage,
     SystemMessage,
 )
