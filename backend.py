@@ -19,8 +19,6 @@ from psycopg.rows import dict_row
 
 # =========================
 
-class TravelState(TypedDict):
-    messages: Annotated[list[AnyMessage], operator.add]
     user_query: str
     flight_results: str
     hotel_results: str
