@@ -13,9 +13,6 @@ def hotel_agent(state: TravelState):
     return {
         "hotel_results": hotel_results,
 Hotel Results:
-{state['hotel_results']}
-
-Make the itinerary practical, budget-aware, and easy to follow.
 """
 
     response = llm.invoke([
