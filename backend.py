@@ -25,7 +25,6 @@ class TravelState(TypedDict):
     flight_results: str
     hotel_results: str
     itinerary: str
-    llm_calls: int
 
 
 # =========================
