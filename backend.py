@@ -7,9 +7,6 @@ load_dotenv()
 os.environ["SSL_CERT_FILE"] = certifi.where()
 os.environ["REQUESTS_CA_BUNDLE"] = certifi.where()
 
-from typing import TypedDict, Annotated
-import operator
-import uuid
 
 
     if "sslmode=" not in database_url:
