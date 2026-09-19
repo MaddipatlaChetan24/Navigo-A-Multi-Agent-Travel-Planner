@@ -24,10 +24,6 @@ from langgraph.graph import StateGraph, START, END
 
 # =========================
 
-# =========================
-# State
-# =========================
-
 class TravelState(TypedDict):
     messages: Annotated[list[AnyMessage], operator.add]
     user_query: str
