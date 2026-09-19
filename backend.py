@@ -14,11 +14,6 @@ import uuid
 import psycopg
 from psycopg.rows import dict_row
 
-from langgraph.graph import StateGraph, START, END
-    if not database_url:
-        raise ValueError(
-            "DATABASE_URL is missing. Please add your Render PostgreSQL External Database URL to .env"
-        )
     if "sslmode=" not in database_url:
         separator = "&" if "?" in database_url else "?"
 
