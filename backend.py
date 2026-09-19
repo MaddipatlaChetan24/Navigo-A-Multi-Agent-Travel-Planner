@@ -19,7 +19,6 @@ from langgraph.graph import StateGraph, START, END
         raise ValueError(
             "DATABASE_URL is missing. Please add your Render PostgreSQL External Database URL to .env"
         )
-
     if "sslmode=" not in database_url:
         separator = "&" if "?" in database_url else "?"
 
