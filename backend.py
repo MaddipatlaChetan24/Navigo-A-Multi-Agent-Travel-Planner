@@ -11,8 +11,6 @@ from typing import TypedDict, Annotated
 import operator
 import uuid
 
-import psycopg
-from psycopg.rows import dict_row
 
     if "sslmode=" not in database_url:
         separator = "&" if "?" in database_url else "?"
