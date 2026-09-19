@@ -21,9 +21,6 @@ from psycopg.rows import dict_row
 
     user_query: str
     flight_results: str
-    hotel_results: str
-    itinerary: str
-
 
 # =========================
 # Flight Agent
