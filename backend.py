@@ -9,8 +9,6 @@ os.environ["REQUESTS_CA_BUNDLE"] = certifi.where()
 
 
 def hotel_agent(state: TravelState):
-    query = f"Best hotels for {state['user_query']}"
-    hotel_results = tavily_search(query)
 
     return {
         "hotel_results": hotel_results,
