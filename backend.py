@@ -12,10 +12,6 @@ def hotel_agent(state: TravelState):
 
     return {
         "hotel_results": hotel_results,
-
-Flight Results:
-{state['flight_results']}
-
 Hotel Results:
 {state['hotel_results']}
 
