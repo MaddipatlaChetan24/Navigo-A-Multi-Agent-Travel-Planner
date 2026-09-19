@@ -12,8 +12,6 @@ os.environ["REQUESTS_CA_BUNDLE"] = certifi.where()
     if "sslmode=" not in database_url:
         separator = "&" if "?" in database_url else "?"
 
-# =========================
-
     user_query: str
 
 def flight_agent(state: TravelState):
