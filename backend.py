@@ -17,12 +17,6 @@ from psycopg.rows import dict_row
 from langgraph.graph import StateGraph, START, END
 from langgraph.checkpoint.postgres import PostgresSaver
 from langchain_core.messages import (
-from tools.flight_tool import search_flights
-
-
-def get_database_url():
-    database_url = os.getenv("DATABASE_URL")
-
     if not database_url:
         raise ValueError(
             "DATABASE_URL is missing. Please add your Render PostgreSQL External Database URL to .env"
