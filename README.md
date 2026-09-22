@@ -174,4 +174,4 @@ This project is open-source and available for educational and practical travel-p
 <sub>Built using Python, FastAPI, LangGraph, Groq & Tavily</sub>
 </div>
 
-Teamwork with chetan07ai
+
