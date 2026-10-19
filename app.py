@@ -100,4 +100,4 @@ async def health_check():
 
 
 @app.get("/favicon.ico")
-    return JSONResponse(content={}
+    
