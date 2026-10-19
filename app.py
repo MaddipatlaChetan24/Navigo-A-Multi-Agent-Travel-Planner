@@ -15,7 +15,7 @@ BASE_DIR = Path(__file__).resolve().parent
 app = FastAPI(
     title="Navigo",
     description="LangGraph Multi-Agent Travel Planner with FastAPI Frontend",
-    version="1.0.0"
+    version="
 )
 
 
