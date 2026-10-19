@@ -99,5 +99,4 @@ async def health_check():
     }
 
 
-@app.get("/favicon.ico")
     
