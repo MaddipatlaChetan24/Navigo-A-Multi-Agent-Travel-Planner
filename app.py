@@ -15,7 +15,7 @@ BASE_DIR = Path(__file__).resolve().parent
 app = FastAPI(
     title="Navigo",
     description="LangGraph Multi-Agent Travel Planner with FastAPI Frontend",
-    version="
+    version="1.0.0"
 )
 
 
@@ -37,14 +37,19 @@ class TravelRequest(BaseModel):
     thread_id: str | None = None
 
 
+
 @app.get("/", response_class=HTMLResponse)
 async def home(request: Request):
-    return 
-        name="index.ht
+    return templates.TemplateResponse(
+        request=request,
+        name="index.html",
+        context={}
+    )
 
 
 @app.post("/api/travel")
-async def travel_planner(request_data: TravelRequest
+async def travel_planner(request_data: TravelRequest):
+    try:
         user_message = request_data.message.strip()
 
         if not user_message:
@@ -95,4 +100,16 @@ async def health_check():
     }
 
 
-    
+@app.get("/favicon.ico")
+async def favicon():
+    return JSONResponse(content={})
+
+
+
+if __name__ == "__main__":
+    uvicorn.run(
+        "app:app",
+        host="127.0.0.1",
+        port=8000,
+        reload=True
+    )
