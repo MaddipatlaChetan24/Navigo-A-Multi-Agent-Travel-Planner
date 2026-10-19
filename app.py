@@ -106,7 +106,4 @@ async def favicon():
 
 
 
-if __name__ == "__main__":
-    u
-        "app:app",
-        
+if __name__ == "__m
