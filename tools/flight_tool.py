@@ -32,7 +32,6 @@ COUNTRY_ALIASES = {
     "united states": "US",
     "uk": "GB",
     "u.k.": "GB",
-    "britain": "GB",
     "england": "GB",
     "uae": "AE",
     "dubai": "AE",
