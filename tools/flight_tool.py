@@ -25,10 +25,6 @@ AIRPORTS = airportsdata.load("IATA")
 
 
 COUNTRY_ALIASES = {
-    "america": "US",
-    "united states": "US",
-    "uk": "GB",
-    "u.k.": "GB",
     "england": "GB",
     "uae": "AE",
     "dubai": "AE",
