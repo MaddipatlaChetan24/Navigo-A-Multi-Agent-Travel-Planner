@@ -31,12 +31,6 @@ COUNTRY_ALIASES = {
 }
 
 
-# Preferred main airport for country-level search
-COUNTRY_MAIN_AIRPORT = {
-    "BD": "DAC",
-    "IN": "DEL",
-    "JP": "NRT",
-    "US": "JFK",
     "GB": "LHR",
     "AE": "DXB",
     "SG": "SIN",
