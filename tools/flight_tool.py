@@ -24,8 +24,6 @@ COUNTRY_ALIASES = {
     "qatar": "QA",
     "saudi arabia": "SA",
     "turkey": "TR",
-    "canada": "CA",
-    "australia": "AU",
     "germany": "DE",
     "france": "FR",
     "italy": "IT",
