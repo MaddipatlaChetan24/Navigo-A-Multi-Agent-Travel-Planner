@@ -20,13 +20,6 @@ DEFAULT_ORIGIN_IATA = os.getenv("DEFAULT_ORIGIN_IATA", "DAC")
 
 COUNTRY_ALIASES = {
     "england": "GB",
-    "uae": "AE",
-    "dubai": "AE",
-    "south korea": "KR",
-    "singapore": "SG",
-    "malaysia": "MY",
-    "thailand": "TH",
-    "indonesia": "ID",
     "nepal": "NP",
     "qatar": "QA",
     "saudi arabia": "SA",
