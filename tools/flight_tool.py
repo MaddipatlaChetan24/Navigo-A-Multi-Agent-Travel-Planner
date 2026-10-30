@@ -13,17 +13,48 @@ os.environ["REQUESTS_CA_BUNDLE"] = certifi.where()
 
 API_KEY = os.getenv("AVIATIONSTACK_API_KEY")
 
-# Default origin when user says only destina
+# Default origin when user says only destination, e.g. "Japan trip"
+# Change this if your default location is not Bangladesh/Dhaka.
 DEFAULT_ORIGIN_IATA = os.getenv("DEFAULT_ORIGIN_IATA", "DAC")
+
+
+BASE_URL = "https://api.aviationstack.com/v1/flights"
+
+
+AIRPORTS = airportsdata.load("IATA")
 
 
 
 COUNTRY_ALIASES = {
+    "usa": "US",
+    "u.s.a": "US",
+    "u.s.": "US",
+    "america": "US",
+    "united states": "US",
+    "uk": "GB",
+    "u.k.": "GB",
+    "britain": "GB",
     "england": "GB",
+    "uae": "AE",
+    "dubai": "AE",
+    "south korea": "KR",
+    "korea": "KR",
+    "russia": "RU",
+    "vietnam": "VN",
+    "bangladesh": "BD",
+    "india": "IN",
+    "japan": "JP",
+    "china": "CN",
+    "singapore": "SG",
+    "malaysia": "MY",
+    "thailand": "TH",
+    "indonesia": "ID",
     "nepal": "NP",
     "qatar": "QA",
     "saudi arabia": "SA",
     "turkey": "TR",
+    "canada": "CA",
+    "australia": "AU",
     "germany": "DE",
     "france": "FR",
     "italy": "IT",
@@ -31,7 +62,21 @@ COUNTRY_ALIASES = {
 }
 
 
+# Preferred main airport for country-level search
+COUNTRY_MAIN_AIRPORT = {
+    "BD": "DAC",
+    "IN": "DEL",
+    "JP": "NRT",
+    "US": "JFK",
     "GB": "LHR",
+    "AE": "DXB",
+    "SG": "SIN",
+    "MY": "KUL",
+    "TH": "BKK",
+    "ID": "CGK",
+    "CN": "PEK",
+    "KR": "ICN",
+    "NP": "KTM",
     "QA": "DOH",
     "SA": "JED",
     "TR": "IST",
