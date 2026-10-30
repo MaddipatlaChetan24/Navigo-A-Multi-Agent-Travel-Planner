@@ -32,14 +32,6 @@ COUNTRY_ALIASES = {
 
 
     "GB": "LHR",
-    "AE": "DXB",
-    "SG": "SIN",
-    "MY": "KUL",
-    "TH": "BKK",
-    "ID": "CGK",
-    "CN": "PEK",
-    "KR": "ICN",
-    "NP": "KTM",
     "QA": "DOH",
     "SA": "JED",
     "TR": "IST",
