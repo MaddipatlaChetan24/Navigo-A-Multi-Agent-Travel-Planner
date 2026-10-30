@@ -17,12 +17,6 @@ API_KEY = os.getenv("AVIATIONSTACK_API_KEY")
 DEFAULT_ORIGIN_IATA = os.getenv("DEFAULT_ORIGIN_IATA", "DAC")
 
 
-BASE_URL = "https://api.aviationstack.com/v1/flights"
-
-
-AIRPORTS = airportsdata.load("IATA")
-
-
 
 COUNTRY_ALIASES = {
     "england": "GB",
