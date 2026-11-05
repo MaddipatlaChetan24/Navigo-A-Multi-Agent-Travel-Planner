@@ -24,6 +24,12 @@ from langchain_core.messages import (
 )
 from langchain_groq import ChatGroq
 from tools.tavily_tool import tavily_search
+from tools.flight_tool import search_flights
+
+
+def get_database_url():
+    database_url = os.getenv("DATABASE_URL")
+
     if not database_url:
         raise ValueError(
             "DATABASE_URL is missing. Please add your Render PostgreSQL External Database URL to .env"
